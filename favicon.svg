@@ -1,0 +1,16 @@
+<svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark purple background -->
+  <rect width="160" height="160" rx="24" ry="24" fill="#3A005F"/>
+
+  <!-- HM text -->
+  <text
+    x="50%"
+    y="50%"
+    dominant-baseline="middle"
+    text-anchor="middle"
+    fill="#F5F5F5"
+    font-size="72"
+    font-family="Pacifico, 'Brush Script MT', 'Segoe Script', cursive">
+    HM
+  </text>
+</svg>

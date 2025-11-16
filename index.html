@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Musik</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Script-style font for Happy Musik -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --purple: #3a005f;
+      --text-light: #f5f5f5;
+      --body-bg: #faf7ff;
+      --body-text: #333333;
+      --accent: #b389ff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-color: var(--body-bg);
+      color: var(--body-text);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--purple);
+      color: var(--text-light);
+      padding: 1.5rem 1.5rem;
+    }
+
+    .header-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .site-title {
+      font-family: "Pacifico", "Brush Script MT", "Segoe Script", cursive;
+      font-size: 2.5rem;
+      letter-spacing: 0.04em;
+    }
+
+    .tagline {
+      font-size: 0.95rem;
+      opacity: 0.9;
+      max-width: 18rem;
+      text-align: right;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    section {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 1.75rem 1.75rem 2rem;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+    }
+
+    section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: var(--purple);
+    }
+
+    /* Mission content layout */
+    .mission-layout {
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .mission-layout img {
+      max-width: 280px;
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      object-fit: cover;
+      flex-shrink: 0;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    }
+
+    .mission-text p + p {
+      margin-top: 0.75rem;
+    }
+
+    .mission-text ul {
+      margin-top: 0.75rem;
+      padding-left: 1.2rem;
+    }
+
+    .mission-text li {
+      margin-bottom: 0.35rem;
+    }
+
+    /* Events */
+    .event {
+      border-left: 4px solid var(--accent);
+      padding-left: 0.9rem;
+      margin-top: 1rem;
+    }
+
+    .event-title {
+      font-weight: 600;
+      margin-bottom: 0.15rem;
+    }
+
+    .event-meta {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 0.35rem;
+    }
+
+    footer {
+      background-color: var(--purple);
+      color: var(--text-light);
+      padding: 1rem 1.5rem;
+    }
+
+    .footer-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    .footer-inner a {
+      color: var(--text-light);
+      text-decoration: none;
+    }
+
+    .footer-inner a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .tagline {
+        text-align: left;
+      }
+
+      .mission-layout {
+        flex-direction: column;
+      }
+
+      .mission-layout img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="site-title">Happy Musik</div>
+      <div class="tagline">
+        Celebrating young classical musicians through free, live performances.
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Mission & Description -->
+    <section id="mission">
+      <h2>Our Mission</h2>
+      <div class="mission-layout">
+        <img src="static/BigCello.png" alt="Close-up of a cello" />
+
+        <div class="mission-text">
+          <p>
+            <strong>Happy Musik celebrates the arts by helping young musicians share their classical music through free, live performances in the community.</strong>
+          </p>
+          <p>
+            We create welcoming opportunities for students ages 8–18 to grow as artists, connect with audiences, and bring joy through acoustic music. Our performers are elementary, middle, and high school students who play:
+          </p>
+          <ul>
+            <li>Woodwind instruments</li>
+            <li>Violin and viola</li>
+            <li>Cello and bass</li>
+            <li>Piano</li>
+          </ul>
+          <p>
+            Performances feature classical repertoire—sometimes solo, and sometimes in duets, trios, or quartets. Each event is friendly, informal, and accessible, giving young artists a chance to build confidence while enriching the lives of the people who listen.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Performances & Events -->
+    <section id="events">
+      <h2>Upcoming Performances &amp; Events</h2>
+
+      <div class="event">
+        <div class="event-title">Happy Musik Performance at The Bellettini</div>
+        <div class="event-meta">
+          January 17, 2025 &nbsp;•&nbsp; 2:00 PM &nbsp;•&nbsp; The Bellettini
+        </div>
+        <p>
+          Young performers from Happy Musik will share classical acoustic pieces for residents and guests.
+          Additional information about performers and program details will be posted soon.
+        </p>
+      </div>
+
+      <p style="margin-top:1.4rem; font-size:0.95rem;">
+        Check back for new performance dates and community concerts as they are scheduled.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>&copy; 2025 Happy Musik. All rights reserved.</div>
+      <div>Contact: <a href="mailto:musiknorthwest@gmail.com">musiknorthwest@gmail.com</a></div>
+    </div>
+  </footer>
+</body>
+</html>
+
